@@ -8,7 +8,7 @@ void print_line(int64_t number, char *string)
 	(void) string;
 	// Add code here.
 	int64_t i = number;
-	printf("%" PRId64 "\n", i);
+	printf("%"PRId64" ""%s""\n", i, string);
 
 
 }
