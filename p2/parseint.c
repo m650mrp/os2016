@@ -1,11 +1,16 @@
 #include "parseint.h"
+#include <stdio.h>
 
 // Returns the value of c or -1 on error
 int parseDecimalChar(char c)
-{
-    (void)c;
-
-    return -1;
+{	if (c){
+    	do {
+      		printf("%c""\n", c & 0xff); 
+      		c >>= 8;
+    	} while (c > 0);
+	}else{
+	return -1;
+	}
 }
 
 // Parses a non-negative integer, interpreted as octal when starting with 0,
